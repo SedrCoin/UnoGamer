@@ -1,0 +1,160 @@
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 250px;
+  /* height: 250px; */
+  position: relative;
+  overflow: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+}
+
+.img-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 150px;
+  margin-bottom: 24px;
+}
+
+.uploaded-img {
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.buttns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  color: floralwhite;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+  width: 80px;
+  padding: 6px 10px;
+}
+
+.btn-cancel {
+  background-color: #ee161f;
+}
+
+.btn-cancel:hover {
+  background-color: #85050a;
+}
+
+.btn-add {
+  background-color: #53a036;
+}
+
+.btn-add:hover {
+  background-color: #1c6800;
+}
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  position: relative;
+}
+.labelName {
+  position: absolute;
+  transform: translateY(-60%);
+  transform-origin: left center;
+  top: 40%;
+  left: 30px;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  opacity: 0.5;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: white;
+}
+
+#input-name,
+.labelName {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  text-transform: lowercase;
+  color: black;
+}
+#input-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  outline: none;
+  border: 1px solid #3d3d3d;
+  border-radius: 26px;
+  padding: 10px 10px 10px 40px;
+  margin-bottom: 15px;
+}
+
+#input-name:focus + .labelName,
+#input-name:not(:placeholder-shown) + label {
+  top: 0;
+  transform: translateY(-50%) scale(0.5) translateX(10px);
+  opacity: 1;
+  font-size: 25px;
+}
+#input-name:focus {
+  border: 2px solid #3d3d3d;
+}
+
+.name-input-wrapper {
+  position: relative;
+}
+#inputPhoto {
+  display: none;
+}
+
+.input-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  border: 1px;
+  border-radius: 20px;
+  background-color: #2871d7;
+  color: white;
+  width: 200px;
+  height: 41px;
+  cursor: pointer;
+}
+.your-photo {
+  margin-bottom: 10px;
+}
+
+.input-photo:hover {
+  background-color: #114996;
+}

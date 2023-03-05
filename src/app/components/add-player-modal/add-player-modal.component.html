@@ -1,0 +1,45 @@
+<div class="wrapper">
+  <h2>Add New Player</h2>
+
+  <form class="form" [formGroup]="form">
+    <div class="name-input-wrapper">
+      <input
+        class="input"
+        id="input-name"
+        formControlName="name"
+        type="text"
+        placeholder=" "
+      />
+      <label for="inputName" class="labelName"> Your Name</label>
+    </div>
+
+    <div class="img-input-wrapper">
+      <div class="icon-wrapper">
+        <label for="image-input"> </label>
+      </div>
+
+      <label class="input-photo" for="inputPhoto">
+        Select Photo
+        <input
+          formControlName="photo"
+          type="file"
+          class="input"
+          id="inputPhoto"
+          accept="image/*"
+          (change)="onFileChange($event)"
+          placeholder=" "
+        />
+        <mat-icon>photo_camera</mat-icon>
+      </label>
+    </div>
+
+    <div *ngIf="imageSrc" class="img-wrapper">
+      <label class="your-photo">Your photo:</label>
+      <img [src]="imageSrc" class="uploaded-img" />
+    </div>
+  </form>
+  <div class="buttns">
+    <button class="btn btn-cancel" (click)="onCancelClick()">Cancel</button>
+    <button class="btn btn-add" (click)="onAddClick()">Add</button>
+  </div>
+</div>

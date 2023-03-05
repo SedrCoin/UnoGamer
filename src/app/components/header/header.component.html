@@ -1,0 +1,29 @@
+<div class="title">
+  <h1>Kuno Cup</h1>
+  <div class="btn-container">
+    <button
+      class="btn btn-default"
+      (click)="onDefaultModeClick()"
+    >
+      <span class="span">Default Players</span>
+      <mat-icon>group</mat-icon>
+    </button>
+    <button
+      class="btn btn-add"
+      [disabled]="!gameFlowService.currentGameStatus"
+      (click)="onAddPlayer()"
+    >
+      <span class="span">Add Players</span>
+      <mat-icon>person_add</mat-icon>
+    </button>
+
+    <button class="btn btn-end" (click)="onEndGame()">
+      <span class="span">End Game</span>
+      <mat-icon>flag</mat-icon>
+    </button>
+    <button class="btn btn-reset" (click)="onResetGame()">
+      <span class="span">Reset Game</span>
+      <mat-icon>replay</mat-icon>
+    </button>
+  </div>
+</div>

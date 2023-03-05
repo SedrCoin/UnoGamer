@@ -1,0 +1,25 @@
+/* .btn-container {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+} */
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.btn {
+  font-size: 20px;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 15px;
+  padding: 8px 24px;
+  border: none;
+  transition: 500ms all ease-in-out;
+  background-color: #faf564;
+}

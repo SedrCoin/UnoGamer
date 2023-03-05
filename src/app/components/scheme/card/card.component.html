@@ -1,0 +1,88 @@
+<div class="card__outer-container">
+  <div
+    class="card__inner-container"
+    [ngStyle]="{
+      backgroundColor: currentPlayer.isWinner
+        ? '#53a036'
+        : currentPlayer.isLoser
+        ? '#ee161f'
+        : '#faf564'
+    }"
+  >
+    <div class="close-container" (click)="onClickRemove()">
+      <div class="leftright"></div>
+      <div class="rightleft"></div>
+    </div>
+
+    <div class="card__img-container">
+      <img [src]="currentPlayer.imgLink" alt="person" />
+    </div>
+
+    <div class="card__player-name">
+      <p>{{ currentPlayer.name }}</p>
+    </div>
+
+    <form class="card__form-container" [formGroup]="form">
+      <div class="card__input-container">
+        <input
+          formControlName="lap1"
+          class="card__lap-input"
+          type="tel"
+          id="lap1"
+          placeholder=" "
+          maxlength="5"
+        />
+        <label for="lap1">1 lap:</label>
+      </div>
+      <div class="card__input-container">
+        <input
+          formControlName="lap2"
+          class="card__lap-input"
+          type="tel"
+          id="lap2"
+          placeholder=" "
+          maxlength="5"
+        />
+        <label for="lap2">2 lap:</label>
+      </div>
+      <div class="card__input-container">
+        <input
+          formControlName="lap3"
+          class="card__lap-input"
+          type="tel"
+          id="lap3"
+          placeholder=" "
+          maxlength="5"
+        />
+        <label for="lap3">3 lap:</label>
+      </div>
+      <div class="card__input-container">
+        <input
+          formControlName="lap4"
+          class="card__lap-input"
+          type="tel"
+          id="lap4"
+          placeholder=" "
+          maxlength="5"
+        />
+        <label for="lap4">4 lap:</label>
+      </div>
+      <div class="card__input-container">
+        <input
+          formControlName="lap5"
+          class="card__lap-input"
+          type="tel"
+          id="lap5"
+          placeholder=" "
+          maxlength="5"
+        />
+        <label for="lap5">5 lap:</label>
+      </div>
+    </form>
+
+    <hr size="1px" />
+    <div class="card__score-container">
+      <p class="card__score-value">Score: {{ currentPlayer.totalScore }}</p>
+    </div>
+  </div>
+</div>

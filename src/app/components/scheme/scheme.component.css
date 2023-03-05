@@ -1,0 +1,25 @@
+:host {
+    display: contents;
+}
+
+.wrapper {
+    /* border: 1px solid darkblue; */
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.placeholder {
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width: 588px) {
+    .wrapper {
+        padding: 0px;
+        gap: 16px;
+    }
+}

@@ -1,0 +1,22 @@
+.title {
+  height: 10vh;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  background: rgb(251, 251, 180);
+  -webkit-box-shadow: 5px 18px 22px -1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 5px 18px 22px -1px rgba(34, 60, 80, 0.2);
+  box-shadow: 5px 18px 22px -1px rgba(34, 60, 80, 0.2);
+  z-index: 4;
+  min-width: 100%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+h1 {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.8rem;
+}
